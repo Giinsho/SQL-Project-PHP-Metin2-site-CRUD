@@ -1,0 +1,139 @@
+h1 {
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.99);
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    font-size: 55px;
+    padding: 10px;
+    background: linear-gradient(45deg, #3b056a, rgba(29, 125, 147, 0.89));
+
+}
+
+h2 {
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.52);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.headTr{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #169a92;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+    background: linear-gradient(90deg, #300a39, #022939);
+    height: 100%;
+    min-height:100%;
+    background-repeat: repeat ;
+
+    background-size:100%;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    margin-top: 20px;
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+
+th,
+td {
+    border-left: 2px solid rgba(0, 0, 0, 0.13);
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+th {
+
+    text-align: left;
+}
+
+thead {
+th {
+    background-color: #55608f;
+}
+}
+
+tbody {
+tr{
+&:hover  {
+
+     background-color: rgba(255,255,255,0.3);
+ }
+}
+
+td {
+    position: relative;
+&:hover {
+&:before {
+     content: "";
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: -9999px;
+     bottom: -9999px;
+     background-color: rgba(255,255,255,0.2);
+     z-index: -1;
+ }
+}
+}
+}
+
+tr:not(:first-child):nth-child(odd){
+    background-color: rgb(21, 0, 59);
+}
+
+.bouncy{
+    animation:bouncy 5s infinite linear;
+    position:relative;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0.3em 0.1em 0.1em 0.2em;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    float: right;
+    background: #3b056a;
+
+}
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+
+a.bouncy:hover{
+    border-color: rgba(255,255,255,1);
+}
